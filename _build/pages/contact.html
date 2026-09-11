@@ -1,0 +1,77 @@
+TITLE: Contact IXCIO — Request a South African market-entry assessment
+DESC: Start an enquiry with IXCIO about SAHPRA registration, local representation or South African market entry for your medical device.
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Start an enquiry.</h1>
+    <p class="lead">Tell us about your device and where you are with it. We reply to every enquiry personally, usually within two working days, with an initial view and what we'd need to go further.</p>
+  </div>
+</section>
+
+<section class="band-white">
+  <div class="wrap two-col">
+    <div>
+      <form class="enquiry" action="{{FORM_ENDPOINT}}" method="POST">
+        <input type="hidden" name="_subject" value="IXCIO website enquiry">
+        <input type="hidden" name="source" value="contact">
+        <div class="row">
+          <div><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+          <div><label for="email">Work email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div><label for="company">Company</label><input id="company" name="company" required autocomplete="organization"></div>
+          <div><label for="country">Country</label><input id="country" name="country" autocomplete="country-name"></div>
+        </div>
+        <div>
+          <label for="interest">What do you need?</label>
+          <select id="interest" name="interest">
+            <option>South African licence holder / authorised representative</option>
+            <option>SAHPRA registration</option>
+            <option>Pathway and classification assessment</option>
+            <option>SaMD / AI device regulatory advice</option>
+            <option>Distributor or partner introductions</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div>
+          <label for="device">Device and intended use</label>
+          <textarea id="device" name="device" required placeholder="What the device does, who uses it, and whether it includes software or AI/ML."></textarea>
+        </div>
+        <fieldset>
+          <legend>Approvals held</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="approvals" value="FDA"> FDA</label>
+            <label><input type="checkbox" name="approvals" value="EU MDR / CE"> EU MDR / CE</label>
+            <label><input type="checkbox" name="approvals" value="UKCA"> UKCA</label>
+            <label><input type="checkbox" name="approvals" value="Other"> Other</label>
+            <label><input type="checkbox" name="approvals" value="None yet"> None yet</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="notes">Anything else</label>
+          <textarea id="notes" name="notes" style="min-height:90px" placeholder="Existing South African partners, timeline, specific questions."></textarea>
+        </div>
+        <p class="hint">By submitting you agree that IXCIO may use these details to respond to your enquiry. We don't share them with anyone else.</p>
+        <div><button class="btn btn-primary" type="submit">Send enquiry</button></div>
+      </form>
+    </div>
+    <div>
+      <div class="card">
+        <h3>Direct</h3>
+        <dl class="facts">
+          <dt>Email</dt><dd><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></dd>
+          <dt>Location</dt><dd>Johannesburg, South Africa</dd>
+          <dt>Hours</dt><dd>Mon–Fri, 08:00–17:00 SAST (UTC+2)</dd>
+        </dl>
+      </div>
+      <div class="card" style="margin-top:1.4rem">
+        <h3>At WHX Johannesburg?</h3>
+        <p>6–8 October 2026, Gallagher Convention Centre. Use the WHX form to book a meeting on the floor.</p>
+        <a class="btn btn-outline btn-sm" href="/whx-johannesburg#meet">WHX meeting request</a>
+      </div>
+      <div class="note" style="margin-top:1.4rem">
+        <p style="margin:0"><strong>What happens next.</strong> You'll get a personal reply with an initial view of your pathway and the questions we'd need answered. If it makes sense to proceed, we scope a written assessment. No automated opinions, no obligation.</p>
+      </div>
+    </div>
+  </div>
+</section>
