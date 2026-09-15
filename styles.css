@@ -80,12 +80,16 @@ section.tight { padding: 3rem 0; }
 .hero .btn-primary:hover { background: var(--paper); }
 .hero .markets { color: #fff; }
 .hero .markets span + span::before { color: rgba(255,255,255,.35); }
-.hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 2rem; align-items: center; }
 .hero .actions { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1.6rem 0 2rem; }
 .hero .strap { font-weight: 600; color: #8fd0cc; margin-bottom: 0; }
 .markets { display: flex; gap: 1.2rem; flex-wrap: wrap; font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--navy); }
 .markets span + span::before { content: "·"; margin-right: 1.2rem; color: var(--line); }
 .route { width: 100%; height: auto; }
+.globe { display: block; width: 100%; max-width: 520px; margin: 0 auto; }
+.globe img { width: 100%; height: auto; border-radius: 50%;
+  -webkit-mask-image: radial-gradient(circle at center, #000 62%, rgba(0,0,0,.85) 72%, transparent 88%);
+  mask-image: radial-gradient(circle at center, #000 62%, rgba(0,0,0,.85) 72%, transparent 88%); }
 
 /* Cards / grids */
 .grid { display: grid; gap: 1.4rem; }
