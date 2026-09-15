@@ -87,9 +87,7 @@ section.tight { padding: 3rem 0; }
 .markets span + span::before { content: "·"; margin-right: 1.2rem; color: var(--line); }
 .route { width: 100%; height: auto; }
 .globe { display: block; width: 100%; max-width: 520px; margin: 0 auto; }
-.globe img { width: 100%; height: auto; border-radius: 50%;
-  -webkit-mask-image: radial-gradient(circle at center, #000 62%, rgba(0,0,0,.85) 72%, transparent 88%);
-  mask-image: radial-gradient(circle at center, #000 62%, rgba(0,0,0,.85) 72%, transparent 88%); }
+.globe img { width: 100%; height: auto; }
 
 /* Cards / grids */
 .grid { display: grid; gap: 1.4rem; }
