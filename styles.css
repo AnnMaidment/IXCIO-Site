@@ -71,7 +71,7 @@ section.tight { padding: 3rem 0; }
 
 /* Hero */
 .hero { padding: 5.5rem 0 4rem; background: linear-gradient(135deg, #0a1a2e 0%, var(--navy) 50%, var(--teal-deep) 100%); color: #dfe6ee; }
-.hero h1 { color: #fff; }
+.hero h1 { color: #fff; font-size: clamp(2.1rem, 4.4vw, 3.05rem); }
 .hero .lead { color: #c3cdd8; }
 .hero .strap { color: #8fd0cc; }
 .hero .btn-outline { color: #fff; border-color: rgba(255,255,255,.7); }
