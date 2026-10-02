@@ -11,7 +11,7 @@ NAV = [
 ]
 
 def head(title, desc, slug):
-    canonical = "https://ixciodigihealth.com/" + ("" if slug == "index" else slug)
+    canonical = "https://www.ixciodigihealth.com/" + ("" if slug == "index" else slug)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
